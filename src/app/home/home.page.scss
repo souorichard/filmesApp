@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -27,11 +26,33 @@
 }
 
 .container {
-  padding: 10px 20px;
-
   ion-item {
+    margin-top: 10px;
+    border-radius: 10px;
+
     ion-thumbnail {
-      width: fit-content;
+      width: 70px;
+      height: fit-content;
+
+      img {
+        border-radius: 8px;
+        box-shadow: -5px 3px 15px #000;
+      }
+    }
+
+    ion-label {
+      span {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 8px;
+      }
+
+      p {
+        font-weight: 300;
+        padding-left: 8px;
+        padding-top: 10px;
+      }
     }
   }
 }
